@@ -22,9 +22,19 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
     <Folder Include="AnonymousApex" />
+    <Folder Include="classes\" />
+    <Folder Include="objects\" />
     <Folder Include="Soql" />
+    <Folder Include="triggers\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\ClassToUpload.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\ClassToUpload.cls</PhysicalRelativePath>
+      <Id>01p0Y000001GqTGQA0</Id>
+      <LastModifiedDateUtcTicks>131195456360000000</LastModifiedDateUtcTicks>
+      <Hash>No/NwB4CZSTsBZRNyzbQDg==</Hash>
+    </Compile>
     <Compile Include="classes\SampleClass.cls">
       <PhysicalRelativePath>src\classes\SampleClass.cls</PhysicalRelativePath>
       <SubType>Class</SubType>
@@ -351,6 +361,13 @@
     </Object>
   </ItemGroup>
   <ItemGroup>
+    <None Include="classes\ClassToUpload.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\ClassToUpload.cls-meta.xml</PhysicalRelativePath>
+      <LastModifiedDateUtcTicks>131195456360000000</LastModifiedDateUtcTicks>
+      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
+      <DependentUpon>classes\ClassToUpload.cls</DependentUpon>
+    </None>
     <None Include="classes\SampleClass.cls-meta.xml">
       <PhysicalRelativePath>src\classes\SampleClass.cls-meta.xml</PhysicalRelativePath>
       <SubType>Metadata</SubType>
