@@ -3,13 +3,22 @@
     <property file="build.properties"/>
     <property environment="env"/>
 
+    <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
+        <classpath>
+            <pathelement location="../ant-salesforce.jar" />
+        </classpath>
+    </taskdef>
+
     <target name="deployRunningAllTests">
-      <sf:deploy username="${sf.username}"
+      <sf:deploy
+        username="${sf.username}"
         password="${sf.password}"
         serverurl="${sf.serverurl}"
+        maxPoll="${sf.maxPoll}"
         runAllTests="true"
         logType="Detail"
-        deployRoot="src"/>
+        deployRoot="src"
+        rollbackOnError="true"/>
     </target>
 
     <!-- Undeploying should be exactly specified in undeploy/destructiveChanges.xml
