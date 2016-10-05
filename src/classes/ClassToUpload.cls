@@ -1,3 +1,4 @@
 public class ClassToUpload {
-	public static Boolean isWorking = false;
+
+	public static Boolean isWorking = true;
 }
