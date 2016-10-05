@@ -1,3 +1,3 @@
 public class ClassToUpload {
-// TODO
+	public static Boolean isWorking = false;
 }
